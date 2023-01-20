@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:news/bookmarks.dart';
 import 'package:news/news_feed.dart';
 import 'package:sizer/sizer.dart';
 
@@ -33,7 +34,7 @@ class MainPage extends StatefulWidget {
 class _MainPageState extends State<MainPage> {
   int currentIndex = 0;
   List pages = [
-    NewsFeed(),
+    BookMarks(),
     NewsFeed(),
     NewsFeed(),
     NewsFeed(),
