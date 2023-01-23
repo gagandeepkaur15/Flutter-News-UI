@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:news/bookmarks.dart';
-import 'package:news/news_feed.dart';
 import 'package:sizer/sizer.dart';
 
+import 'feed.dart';
+
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(const MyApp());
 }
 
@@ -34,10 +36,10 @@ class MainPage extends StatefulWidget {
 class _MainPageState extends State<MainPage> {
   int currentIndex = 0;
   List pages = [
+    Feed(),
+    Feed(),
     BookMarks(),
-    NewsFeed(),
-    NewsFeed(),
-    NewsFeed(),
+    Feed(),
   ];
 
   void onTap(int index) {
